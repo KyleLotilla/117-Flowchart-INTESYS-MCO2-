@@ -1,15 +1,18 @@
+/* Determines if a student could take a course */
 cantake(Student, Course):-
     studentyear(Student, Year),
     term(Term),
     offered(Course, Year, Term),
     passedpreqs(Student, Course).
 
+/* Determines if a student passed all the pre-requisites of a course */
 passedpreqs(Student, Course):-
     nopreq(Course);
     findall(Preq, preq(Course, Preq), PreqList),
     findall(Passed, passed(Student, Passed), PassedCourses),
     subset(PreqList, PassedCourses).
 
+/* Course Offerings depending on year and term */
 offered(filkomu, freshman, first).
 offered(ccsalge, freshman, first).
 offered(compro1, freshman, first).
@@ -94,6 +97,7 @@ offered(spelec3, senior, third).
 offered(intfilo, senior, third).
 offered(greatwk, senior, third).
 
+/* Pre-Requisites */
 preq(automat, dasalgo).
 preq(csmetre, intesys).
 preq(csmetre, sofengg).
@@ -151,6 +155,7 @@ preq(gameng3,gameng2).
 preq(thscs2,thscs1).
 preq(thscs3,thscs2).
 
+/* States that these course has no pre-requisites */
 nopreq(compro1).
 nopreq(filkomu).
 nopreq(ccsalge).
@@ -183,6 +188,7 @@ nopreq(spelec3).
 nopreq(intfilo).
 nopreq(greatwk).
 
+/* Sample Facts */
 studentyear(john, junior).
 term(third).
 
