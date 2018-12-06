@@ -189,9 +189,31 @@ nopreq(intfilo).
 nopreq(greatwk).
 
 /* Sample Facts */
-studentyear(john, junior).
-term(third).
+studentyear(john, sophomore).
+term(first).
 
-passed(john,intesys).
-passed(john,sofengg).
-passed(john,introos).
+passed(john,filkomu).
+passed(john,ccsalge).
+passed(john,compro1).
+passed(john,basicon).
+passed(john,scimatb).
+passed(john,lbymatb).
+passed(john,fitwell).
+passed(john,nstp101).
+passed(john,persef1).
+passed(john,sas1000).
+passed(john,fildlar).
+passed(john,ccstrig).
+passed(john,disctru).
+passed(john,compro2).
+passed(john,soctec1).
+passed(john,ftsport).
+passed(john,nstp01).
+passed(john,lasare1).
+passed(john,englcom).
+passed(john,dasalgo).
+passed(john,objectp).
+passed(john,formdev).
+passed(john,ftdance).
+passed(john,tredone).
+passed(john,nstp02).
