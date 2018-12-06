@@ -10,10 +10,91 @@ passedpreqs(Student, Course):-
     findall(Passed, passed(Student, Passed), PassedCourses),
     subset(PreqList, PassedCourses).
 
-
-studentyear(john, junior).
-term(third).
+offered(filkomu, freshman, first).
+offered(ccsalge, freshman, first).
+offered(compro1, freshman, first).
+offered(basicon, freshman, first).
+offered(scimatb, freshman, first).
+offered(lbymatb, freshman, first).
+offered(fitwell, freshman, first).
+offered(nstp101, freshman, first).
+offered(persef1, freshman, first).
+offered(sas1000, freshman, first).
+offered(fildlar, freshman, second).
+offered(ccstrig, freshman, second).
+offered(disctru, freshman, second).
+offered(compro2, freshman, second).
+offered(soctec1, freshman, second).
+offered(fitsport, freshman, second).
+offered(nstp01, freshman, second).
+offered(lasare1, freshman, second).
+offered(englcom, freshman, third).
+offered(ccscal1, freshman, third).
+offered(dasalgo, freshman, third).
+offered(objectp, freshman, third).
+offered(formdev, freshman, third).
+offered(ftdance, freshman, third).
+offered(tredone, freshman, third).
+offered(nstp02, freshman, third).
+offered(speecom, sophomore, first).
+offered(ccscal2, sophomore, first).
+offered(intesys, sophomore, first).
+offered(introdb, sophomore, first).
+offered(digides, sophomore, first).
+offered(scimatp, sophomore, first).
+offered(lasare2, sophomore, first).
+offered(csstat, sophomore, second).
+offered(swdespa, sophomore, second).
+offered(arcorg, sophomore, second).
+offered(lbyarc, sophomore, second).
+offered(network, sophomore, second).
+offered(ftteams, sophomore, second).
+offered(tredtwo, sophomore, second).
+offered(persef2, sophomore, second).
+offered(advdisc, sophomore, thrid).
+offered(webapde, sophomore, thrid).
+offered(fungame, sophomore, thrid).
+offered(introos, sophomore, thrid).
+offered(soctec2, sophomore, thrid).
+offered(kaspil1, sophomore, thrid).
+offered(englres, junior, first).
+offered(sofengg, junior, first).
+offered(gameng1, junior, first).
+offered(mathgd, junior, first).
+offered(cselec1, junior, first).
+offered(tredtri, junior, first).
+offered(prctcs, junior, second).
+offered(funviad, junior, second).
+offered(csethic, junior, second).
+offered(automat, junior, thrid).
+offered(algocom, junior, thrid).
 offered(csmetre, junior, third).
+offered(prosdev, junior, thrid).
+offered(gameng2, junior, thrid).
+offered(gdgraph, junior, thrid).
+offered(scimatc, junior, thrid).
+offered(lbymatc, junior, thrid).
+offered(thscs1, senior, first).
+offered(gameng3, senior, first).
+offered(cselec2, senior, first).
+offered(cselec3, senior, first).
+offered(tredfor, senior, first).
+offered(kaspil2, senior, first).
+offered(ipersef, senior, first).
+offered(lasare3, senior, first).
+offered(humaart, senior, second).
+offered(thscs2, senior, second).
+offered(spelec1, senior, second).
+offered(spelec2, senior, second).
+offered(cselec4, senior, second).
+offered(humalit, senior, third).
+offered(thscs3, senior, third).
+offered(inovate, senior, third).
+offered(spelec3, senior, third).
+offered(intfilo, senior, third).
+offered(greatwk, senior, third).
+
+preq(automat, dasalgo).
 preq(csmetre, intesys).
 preq(csmetre, sofengg).
 preq(csmetre, opersys).
@@ -46,7 +127,7 @@ preq(algocom,dasalgo).
 preq(introdb,objectp).
 preq(swdespa,objectp).
 preq(tredtwo,tredone).
-preq(cstat,ccscal2).
+preq(csstat,ccscal2).
 preq(webapde,introdb).
 preq(arcorg,digides).
 preq(lasare3,lasare2).
@@ -70,9 +151,6 @@ preq(gameng3,gameng2).
 preq(thscs2,thscs1).
 preq(thscs3,thscs2).
 
-passed(john,intesys).
-passed(john,sofengg).
-passed(john,opersys).
 nopreq(compro1).
 nopreq(filkomu).
 nopreq(ccsalge).
@@ -83,7 +161,7 @@ nopreq(fitwell).
 nopreq(nstp101).
 nopreq(persef1).
 nopreq(sas1000).
-nopreq(fildlar).
+nopreq(lasare1).
 nopreq(englcom).
 nopreq(formdev).
 nopreq(tredone).
@@ -91,7 +169,6 @@ nopreq(scimatp).
 nopreq(lbyarc).
 nopreq(kaspil1).
 nopreq(cselec1).
-nopreq(funviad).
 nopreq(funviad).
 nopreq(csethic).
 nopreq(scimatc).
@@ -105,3 +182,10 @@ nopreq(inovate).
 nopreq(spelec3).
 nopreq(intfilo).
 nopreq(greatwk).
+
+studentyear(john, junior).
+term(third).
+
+passed(john,intesys).
+passed(john,sofengg).
+passed(john,opersys).
