@@ -101,7 +101,7 @@ offered(greatwk, senior, third).
 preq(automat, dasalgo).
 preq(csmetre, intesys).
 preq(csmetre, sofengg).
-preq(csmetre, opersys).
+preq(csmetre, introos).
 preq(fildlar, filkomu).
 preq(ccstrig, ccsalge).
 preq(ccscal1,ccsalge).
@@ -194,4 +194,4 @@ term(third).
 
 passed(john,intesys).
 passed(john,sofengg).
-passed(john,opersys).
+passed(john,introos).
